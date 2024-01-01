@@ -1,7 +1,4 @@
 import styled from "styled-components";
-export const Container = styled.div`
-    background: yellow;
-`
 export const Img = styled.img`
     width: 300px;
     border-radius: 10%;
@@ -23,11 +20,6 @@ export const Li = styled.li`
         margin-right:20px
     }
 `
-export const H2 = styled.h2`
-    color:white;
-    margin:0;
-    padding:10px;
-`
 export const Ul0 = styled.ul`
     display:flex;
     justify-content:center;
@@ -38,8 +30,18 @@ export const Li0 = styled.li`
         margin-right:20px
     }
 `
-export const Div = styled.div`
+export const Div = styled.ul`
+    padding-top:20px;
     display:flex;
     justify-content:center;
-    background:red;
+    list-style:none;
+    background:blue;
+    padding-bottom:20px
+`
+export const Li1 = styled.li`
+    color:white;
+    &:not(:last-child){
+        margin-right:20px
+    }
+    border-radius:20%;
 `
